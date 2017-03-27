@@ -1,0 +1,13 @@
+datasource:
+  sampleapp:
+    url: jdbc:postgresql://localhost:5432/coba_heroku_jpa
+    username: postgres
+    password: password
+    driverClassName: org.postgresql.Driver
+    defaultSchema:
+    maxPoolSize: 20
+    hibernate:
+      hbm2ddl.method: update
+      show_sql: true
+      format_sql: true
+      dialect: org.hibernate.dialect.PostgreSQL9Dialect
