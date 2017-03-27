@@ -1,6 +1,6 @@
 datasource:
   sampleapp:
-    url: postgres://dwhxqlblzvgdth:f6e43086766f2f2e9e51905cdc5ca4d2e72082631f1b38c5f087f1915e051523@ec2-23-23-222-147.compute-1.amazonaws.com:5432/d7ln84n7go8i6q
+    url: jdbc:postgresql://ec2-23-23-222-147.compute-1.amazonaws.com:5432/d7ln84n7go8i6q?user=dwhxqlblzvgdth&password=f6e43086766f2f2e9e51905cdc5ca4d2e72082631f1b38c5f087f1915e051523
     username: dwhxqlblzvgdth
     password: f6e43086766f2f2e9e51905cdc5ca4d2e72082631f1b38c5f087f1915e051523
     driverClassName: org.postgresql.Driver
