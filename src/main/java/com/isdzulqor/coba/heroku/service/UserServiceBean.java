@@ -17,7 +17,7 @@ import java.util.List;
 @Service
 public class UserServiceBean implements UserService {
     @Autowired
-    private UserRepository userDao;
+    private UserRepository userRepository;
 
     @Override
     public Page<User> findAll(Pageable pageable) {
@@ -26,7 +26,7 @@ public class UserServiceBean implements UserService {
 
     @Override
     public List<User> findAll() {
-        return userDao.findAll();
+        return userRepository.findAll();
     }
 
     @Override
@@ -44,7 +44,7 @@ public class UserServiceBean implements UserService {
         toBeSavedUser.setFirst(user.getFirst().toLowerCase());
         toBeSavedUser.setCompany(user.getCompany().toLowerCase());
         toBeSavedUser.setCity(user.getCity().toLowerCase());
-        return userDao.save(toBeSavedUser);
+        return userRepository.save(toBeSavedUser);
     }
 
     @Override
